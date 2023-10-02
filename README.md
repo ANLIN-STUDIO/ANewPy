@@ -44,12 +44,10 @@ def input(__prompt: Any = '',
 ```
 ### Quit
 
- - **ForcedClose: bool = False** : 是否强制退出，
- - **todo: Any = None** : 退出前需要调用的函数
+ - **ForcedClose: bool = False** : 是否强制退出
 
 ```python
-def quit(ForcedClose: bool = False,
-         todo: Any = None):
+def quit(ForcedClose: bool = False):
     if ForcedClose:
         # noinspection PyProtectedMember
         os._exit(0)
